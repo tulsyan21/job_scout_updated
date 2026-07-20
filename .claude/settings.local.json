@@ -19,7 +19,8 @@
       "WebFetch(domain:www.sarvam.ai)",
       "WebFetch(domain:startup.jobs)",
       "WebFetch(domain:careers.adobe.com)",
-      "WebFetch(domain:consider.com)"
+      "WebFetch(domain:consider.com)",
+      "Bash(gh auth *)"
     ]
   }
 }

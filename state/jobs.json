@@ -8,7 +8,15 @@
       "Atlassian AI": "2026-07-20",
       "LinkedIn (BLR)": "2026-07-20",
       "Sarvam AI": "2026-07-20"
-    }
+    },
+    "quarterly_log": [
+      {
+        "date": "2026-07-20",
+        "answer": "More hireable than the prior period. ~8 months in Meesho's AI Services team gave hands-on Voice AI work and a working understanding of how to build agents — a concrete step up in frontier, portable AI skills versus before joining the team.",
+        "skill_added": "Hands-on Voice AI + agent-building fundamentals (AI Services, Meesho)",
+        "baseline": true
+      }
+    ]
   },
   "jobs": {
     "e114d1833b8bf6cf": {
