@@ -1,1 +1,136 @@
-{"meta": {"last_quarterly_check": null, "custom_last_swept": {}}, "jobs": {}}
+{
+  "meta": {
+    "last_quarterly_check": "2026-07-20",
+    "custom_last_swept": {
+      "Google (DeepMind / Gemini, BLR)": "2026-07-20",
+      "Microsoft AI (BLR)": "2026-07-20",
+      "Adobe (Firefly / AI)": "2026-07-20",
+      "Atlassian AI": "2026-07-20",
+      "LinkedIn (BLR)": "2026-07-20",
+      "Sarvam AI": "2026-07-20"
+    }
+  },
+  "jobs": {
+    "e114d1833b8bf6cf": {
+      "hash": "e114d1833b8bf6cf",
+      "company": "Glean",
+      "title": "Product Manager",
+      "tier": "C",
+      "location": "Bangalore, India",
+      "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4597178005",
+      "posted": "2026-07-10T18:31:04-04:00",
+      "score": 81,
+      "status": "shortlisted",
+      "date": "2026-07-20",
+      "breakdown": {
+        "mission_hardness": 22,
+        "ai_depth": 14,
+        "talent_density": 12,
+        "operating_rhythm": 8,
+        "stability_distribution": 11,
+        "scope": 9,
+        "ai_nativeness": 5
+      },
+      "unknowns": [
+        "operating rhythm (WLB) unverified",
+        "comp band unknown",
+        "BLR lead/peers unknown"
+      ],
+      "evidence": "JD text"
+    },
+    "ded64e32eced29b4": {
+      "hash": "ded64e32eced29b4",
+      "company": "Glean",
+      "title": "Product Manager, Connectors",
+      "tier": "C",
+      "location": "Bangalore, India",
+      "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4629292005",
+      "posted": "2026-07-08T06:15:44-04:00",
+      "score": 72,
+      "status": "shortlisted",
+      "date": "2026-07-20",
+      "breakdown": {
+        "mission_hardness": 19,
+        "ai_depth": 10,
+        "talent_density": 12,
+        "operating_rhythm": 8,
+        "stability_distribution": 11,
+        "scope": 7,
+        "ai_nativeness": 5
+      },
+      "unknowns": [
+        "operating rhythm unverified",
+        "comp band unknown",
+        "lead unknown"
+      ],
+      "evidence": "JD text"
+    },
+    "9db7cceab1fec23c": {
+      "hash": "9db7cceab1fec23c",
+      "company": "Stripe (India)",
+      "title": "Product Manager, Risk & Compliance",
+      "tier": "C",
+      "location": "Bengaluru",
+      "url": "https://stripe.com/jobs/search?gh_jid=7625842",
+      "posted": "2026-06-26T17:05:32-04:00",
+      "score": null,
+      "status": "gated",
+      "date": "2026-07-20",
+      "gate_reason": "Requires 10+ years PM (rubric level gate #2 rejects roles requiring 10+ yrs)",
+      "breakdown": {},
+      "unknowns": [],
+      "evidence": "JD text"
+    },
+    "9824cb64ea654619": {
+      "hash": "9824cb64ea654619",
+      "company": "Sarvam AI",
+      "title": "Product Manager (Models)",
+      "tier": "B",
+      "location": "Bengaluru",
+      "url": "https://www.sarvam.ai/careers/jobs/9e197c29-5164-42eb-8e74-4f691a794517",
+      "posted": null,
+      "score": 75,
+      "status": "shortlisted",
+      "date": "2026-07-20",
+      "breakdown": {
+        "mission_hardness": 21,
+        "ai_depth": 14,
+        "talent_density": 12,
+        "operating_rhythm": 7,
+        "stability_distribution": 8,
+        "scope": 8,
+        "ai_nativeness": 5
+      },
+      "unknowns": [
+        "JD not retrievable (careers page blocked) — role-level user-research centrality, exact YOE, and rhythm unconfirmed",
+        "startup runway plausible (Lightspeed/Peak XV + IndiaAI mission) but not verified — stability gate passed provisionally"
+      ],
+      "evidence": "company-level + title only (custom sweep; JD blocked 403)"
+    },
+    "2bef3cfed0ce689e": {
+      "hash": "2bef3cfed0ce689e",
+      "company": "Atlassian AI",
+      "title": "Senior Product Manager - Intelligent Automations",
+      "tier": "A",
+      "location": "Bengaluru, India",
+      "url": "https://startup.jobs/senior-product-manager-intelligent-automations-atlassian-3463437",
+      "posted": null,
+      "score": 63,
+      "status": "below_threshold",
+      "date": "2026-07-20",
+      "breakdown": {
+        "mission_hardness": 12,
+        "ai_depth": 4,
+        "talent_density": 11,
+        "operating_rhythm": 13,
+        "stability_distribution": 14,
+        "scope": 7,
+        "ai_nativeness": 2
+      },
+      "unknowns": [
+        "comp band unknown"
+      ],
+      "evidence": "JD text (startup.jobs mirror) — internal process-automation role, no LLM/agent work; 8 yrs min"
+    }
+  }
+}

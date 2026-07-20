@@ -13,7 +13,13 @@
       "Read(//Library/Frameworks/Python.framework/Versions/3.13/etc/openssl/**)",
       "Read(//Applications/Python 3.13/**)",
       "Bash(\"/Applications/Python 3.13/Install Certificates.command\")",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(python3 src/fetch.py)",
+      "WebSearch",
+      "WebFetch(domain:www.sarvam.ai)",
+      "WebFetch(domain:startup.jobs)",
+      "WebFetch(domain:careers.adobe.com)",
+      "WebFetch(domain:consider.com)"
     ]
   }
 }

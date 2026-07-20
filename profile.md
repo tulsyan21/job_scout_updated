@@ -1,7 +1,5 @@
 # Ayushi Tulsyan — Profile (for scoring context + outreach drafts)
 
-> MERGE the old claude.md's profile/outreach sections into this file, then delete this line.
-
 ## One-liner
 Engineer-turned-PM, ~4.5 yrs, building AI platforms and ML decisioning systems at Meesho
 (160M+ ATU). Moving into hands-on AI product-builder roles.
