@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+
+# Local machine state — must not be shared (esp. in a public repo)
+.claude/settings.local.json
+
+# Ephemeral scan hand-off file (created by fetch.py, deleted after scoring)
+state/pending_review.json
