@@ -14,6 +14,7 @@ import hashlib
 import html
 import json
 import re
+import ssl
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -23,6 +24,14 @@ try:
     import yaml  # pip install pyyaml
 except ImportError:
     sys.exit("Missing dependency: run  pip install pyyaml")
+
+# macOS python.org builds ship without a usable default CA file; prefer certifi's
+# bundle so HTTPS verification works regardless of the system cert setup.
+try:
+    import certifi
+    SSL_CTX = ssl.create_default_context(cafile=certifi.where())
+except ImportError:
+    SSL_CTX = ssl.create_default_context()
 
 ROOT = Path(__file__).resolve().parent.parent
 WATCHLIST = ROOT / "config" / "watchlist.yaml"
@@ -62,7 +71,7 @@ def canonical_hash(company: str, url: str) -> str:
 
 def get_json(url: str):
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=20) as r:
+    with urllib.request.urlopen(req, timeout=20, context=SSL_CTX) as r:
         return json.loads(r.read().decode())
 
 
