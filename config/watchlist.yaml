@@ -1,0 +1,124 @@
+# Watchlist — company fit is judged HERE, once, by Ayushi. The agent never re-litigates
+# whether a company belongs; it only scores roles within approved companies.
+#
+# Schema per company:
+#   name:            display name
+#   ats:             greenhouse | lever | ashby | custom
+#   token:           ATS board token (verify with: python3 src/fetch.py --verify)
+#   verified:        set true only after --verify succeeds
+#   tier:            A (big-tech AI org) | B (AI-native, voice/vernacular) | C (AI-native horizontal)
+#   rhythm_verdict:  pass | fail | unknown   (fail = gated out entirely)
+#   why:             one line — why this company is on the list
+#   notes:           anything else (funding status, red flags, contacts)
+#
+# ALL TOKENS BELOW ARE GUESSES. First task in Claude Code: run --verify, fix or remove.
+# Big tech (tier A) mostly uses custom ATS — fetch.py skips those; CLAUDE.md's bounded
+# web-sweep covers them weekly instead.
+
+companies:
+  # ---- Lane A: global big-tech AI orgs, Bengaluru ----
+  - name: Google (DeepMind / Gemini, BLR)
+    ats: custom
+    careers_url: https://www.google.com/about/careers/applications/jobs/results/?q=product%20manager%20AI&location=Bengaluru
+    tier: A
+    rhythm_verdict: unknown
+    why: Tanya-path default; elite AI org at scale
+  - name: Microsoft AI (BLR)
+    ats: custom
+    careers_url: https://jobs.careers.microsoft.com/global/en/search?q=product%20manager%20AI&lc=Bangalore
+    tier: A
+    rhythm_verdict: unknown
+    why: scaled AI transformation leader
+  - name: Adobe (Firefly / AI)
+    ats: custom
+    careers_url: https://careers.adobe.com/us/en/search-results?keywords=product%20manager%20AI
+    tier: A
+    rhythm_verdict: unknown
+    why: from original tiered list; strong AI product org
+  - name: Atlassian AI
+    ats: custom
+    careers_url: https://www.atlassian.com/company/careers/all-jobs
+    tier: A
+    rhythm_verdict: pass
+    why: from original tiered list; famously flexible/distributed
+  - name: LinkedIn (BLR)
+    ats: custom
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=senior%20product%20manager%20AI&location=Bengaluru
+    tier: A
+    rhythm_verdict: unknown
+    why: elite scaled AI product work, BLR presence
+
+  # ---- Lane B: AI-native, voice/adjacent (moat un-weighted but access is easy) ----
+  - name: Sarvam AI
+    ats: custom
+    careers_url: https://www.sarvam.ai/careers
+    tier: B
+    rhythm_verdict: unknown
+    why: frontier Indian AI lab; from original tiered list
+    notes: startup — stability gate applies; check funding
+  - name: Observe.AI
+    ats: lever
+    token: observeai
+    verified: false
+    tier: B
+    rhythm_verdict: unknown
+    why: voice AI, Bengaluru; direct skills match
+    notes: startup — stability gate applies
+
+  # ---- Lane C: AI-native horizontal, elite bar ----
+  - name: Perplexity
+    ats: greenhouse
+    token: perplexityai
+    verified: false
+    tier: C
+    rhythm_verdict: unknown
+    why: from original tiered list; frontier consumer AI
+    notes: check India roles specifically; intense-culture reports — research rhythm first
+  - name: Glean
+    ats: greenhouse
+    token: gleanwork
+    verified: false
+    tier: C
+    rhythm_verdict: unknown
+    why: enterprise AI, BLR office, strong talent density
+  - name: Decagon
+    ats: ashby
+    token: decagon
+    verified: false
+    tier: C
+    rhythm_verdict: unknown
+    why: "#1 excitement in pipeline; agent platform"
+    notes: PENDING — rhythm + runway are questions 1 and 2 for Bihan; G3 says sprint culture kills it
+  - name: Anthropic
+    ats: greenhouse
+    token: antropic-placeholder
+    verified: false
+    tier: C
+    rhythm_verdict: unknown
+    why: frontier lab; India surface thin but watch it
+  - name: OpenAI
+    ats: ashby
+    token: openai
+    verified: false
+    tier: C
+    rhythm_verdict: unknown
+    why: frontier lab; India hiring started — watch BLR roles
+
+  # ---- Pending user verdicts ----
+  - name: Cred
+    ats: custom
+    careers_url: https://careers.cred.club/openings
+    tier: C
+    rhythm_verdict: fail   # provisional per WLB reputation — CONFIRM or overturn; fail = never scanned
+    why: from original tiered list
+  - name: Stripe (India)
+    ats: greenhouse
+    token: stripe
+    verified: false
+    tier: C
+    rhythm_verdict: unknown
+    why: from original tiered list; elite bar
+    notes: confirm India PM hiring exists at all
+
+# Removed per user decisions: Eka Care, Truemeds (healthcare deprioritized),
+# Uber-shaped WLB-notorious companies (gate). Razorpay tracked manually (mid-pipeline).
